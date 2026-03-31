@@ -110,7 +110,7 @@ const Hero = () => {
         >
           <button
             onClick={scrollToProjects}
-            className="bg-[#6366f1] hover:bg-[#6366f1]/90 text-white rounded-xl px-4 py-2 glow flex items-center justify-center"
+            className="bg-[#6366f1] hover:bg-[#6366f1]/90 text-white rounded-xl px-4 py-2 glow flex items-center justify-center cursor-pointer"
           >
             View Projects
             <ExternalLink className="w-5 h-5 ml-2" />
