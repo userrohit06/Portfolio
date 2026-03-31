@@ -107,7 +107,7 @@ const Navbar = () => {
                 className="bg-[#6366f1] hover:bg-[#6366f1]/90 text-white rounded-xl px-4 inline-flex items-center gap-2 py-2 font-medium shadow-md
                hover:shadow-lg transition-all duration-300"
               >
-                <a href="/resume.pdf" download className="flex items-center">
+                <a href="/api/resume" download className="flex items-center">
                   <Download className="w-4 h-4 mr-2" />
                   Get My Resume
                 </a>
@@ -163,7 +163,7 @@ const Navbar = () => {
                hover:shadow-lg transition-all duration-300 w-full"
                   >
                     <a
-                      href="/resume.pdf"
+                      href="/api/resume"
                       download
                       className="flex items-center justify-center w-full"
                     >

@@ -1,0 +1,41 @@
+{
+  "frontend": {
+    "title": "Frontend",
+    "icon": "Monitor",
+    "skills": [
+      { "name": "HTML5", "icon": "html" },
+      { "name": "CSS3", "icon": "css" },
+      { "name": "JavaScript", "icon": "javascript" },
+      { "name": "React.js", "icon": "react" },
+      { "name": "Next.js", "icon": "next" },
+      { "name": "Tailwind CSS", "icon": "tailwind" }
+    ]
+  },
+  "backend": {
+    "title": "Backend",
+    "icon": "Server",
+    "skills": [
+      { "name": "Node.js", "icon": "nodejs" },
+      { "name": "Express.js", "icon": "express" },
+      { "name": ".NET Core", "icon": "dotnet" }
+    ]
+  },
+  "database": {
+    "title": "Database",
+    "icon": "Database",
+    "skills": [
+      { "name": "MongoDB", "icon": "mongodb" },
+      { "name": "SQL Server", "icon": "sqlserver" }
+    ]
+  },
+  "tools": {
+    "title": "Tools",
+    "icon": "Wrench",
+    "skills": [
+      { "name": "Git", "icon": "git" },
+      { "name": "GitHub", "icon": "github" },
+      { "name": "Postman", "icon": "postman" },
+      { "name": "VS Code", "icon": "vscode" }
+    ]
+  }
+}

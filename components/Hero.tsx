@@ -118,7 +118,7 @@ const Hero = () => {
 
           <button className="border-[#6366f1]/30 text-[#e2e8f0] hover:bg-[#6366f1]/10 rounded-xl px-4 py-2">
             <a
-              href="/resume.pdf"
+              href="/api/resume"
               download
               className="flex items-center justify-center"
             >

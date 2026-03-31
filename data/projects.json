@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "E-Commerce Platform",
+    "description": "A full-featured e-commerce platform with user authentication, product management, shopping cart, and payment integration using Stripe.",
+    "techStack": ["React", "Node.js", "MongoDB", "Express", "Stripe"],
+    "github": "https://github.com",
+    "live": "https://example.com",
+    "image": "/projects/ecommerce.jpg",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "Task Management App",
+    "description": "A collaborative task management application with real-time updates, team workspaces, and progress tracking features.",
+    "techStack": ["React", "Node.js", "Socket.io", "MongoDB"],
+    "github": "https://github.com",
+    "live": "https://example.com",
+    "image": "/projects/taskmanager.jpg",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "title": "Portfolio Dashboard",
+    "description": "An analytics dashboard for tracking portfolio performance with interactive charts and real-time data visualization.",
+    "techStack": ["React", ".NET Core", "SQL Server", "Chart.js"],
+    "github": "https://github.com",
+    "live": "https://example.com",
+    "image": "/projects/dashboard.jpg",
+    "featured": true
+  },
+  {
+    "id": 4,
+    "title": "Social Media API",
+    "description": "A RESTful API for a social media platform with user authentication, posts, comments, and likes functionality.",
+    "techStack": ["Node.js", "Express", "MongoDB", "JWT"],
+    "github": "https://github.com",
+    "live": "",
+    "image": "/projects/api.jpg",
+    "featured": false
+  },
+  {
+    "id": 5,
+    "title": "Weather Application",
+    "description": "A weather forecasting app with location-based services, 7-day forecasts, and beautiful UI animations.",
+    "techStack": ["React", "OpenWeather API", "Tailwind CSS"],
+    "github": "https://github.com",
+    "live": "https://example.com",
+    "image": "/projects/weather.jpg",
+    "featured": false
+  },
+  {
+    "id": 6,
+    "title": "Blog CMS",
+    "description": "A content management system for blogs with markdown support, image uploads, and SEO optimization features.",
+    "techStack": ["React", "Node.js", "MongoDB", "Cloudinary"],
+    "github": "https://github.com",
+    "live": "https://example.com",
+    "image": "/projects/blog.jpg",
+    "featured": false
+  }
+]
