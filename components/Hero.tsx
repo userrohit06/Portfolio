@@ -4,12 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowDown, Download, ExternalLink } from "lucide-react";
 import { useEffect, useState } from "react";
 
-const roles = [
-  "Full Stack Developer",
-  "MERN Developer",
-  "React Developer",
-  "Dot Net Full Stack Developer",
-];
+const roles = ["Full Stack Developer", "React Developer"];
 
 const Hero = () => {
   const [currentRole, setCurrentRole] = useState(0);
@@ -53,7 +48,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden md:pt-20"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden md:pt-20 pt-[-3rem]"
     >
       {/* animated background */}
       <div className="absolute inset-0 overflow-hidden">
