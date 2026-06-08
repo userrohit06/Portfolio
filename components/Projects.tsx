@@ -35,8 +35,7 @@ export function Projects() {
   const [showAll, setShowAll] = useState(false);
   const projects: Project[] = projectsData;
   const featuredProjects = projects.filter((p) => p.featured);
-  const otherProjects = projects.filter((p) => !p.featured);
-  const hasProjects = false;
+  const hasProjects = true;
 
   return (
     <section id="projects" className="py-20 md:py-32 relative">
@@ -85,7 +84,8 @@ export function Projects() {
                     }`}
                   >
                     <div className="absolute inset-0 bg-gradient-to-br from-[#6366f1]/20 to-[#22c55e]/20 flex items-center justify-center">
-                      <FolderOpen className="w-16 h-16 text-[#6366f1]/50" />
+                      {/* <FolderOpen className="w-16 h-16 text-[#6366f1]/50" /> */}
+                      <img src={project.image} alt="Clientage" />
                     </div>
                     <div className="absolute inset-0 bg-[#6366f1]/0 group-hover:bg-[#6366f1]/10 transition-colors duration-300" />
                   </div>
@@ -133,7 +133,6 @@ export function Projects() {
                       )}
                       {project.live && (
                         <button
-                          //   className="bg-[#6366f1] hover:bg-[#6366f1]/90 text-white"
                           className="bg-[#6366f1] hover:bg-[#6366f1]/90 text-white rounded-xl px-4 inline-flex items-center gap-2 py-2 font-medium shadow-md
                hover:shadow-lg transition-all duration-300"
                         >
@@ -154,96 +153,6 @@ export function Projects() {
               </motion.div>
             ))}
           </motion.div>
-
-          {/* Other Projects */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-8"
-          >
-            <h3 className="text-2xl font-semibold text-[#e2e8f0]">
-              Other Projects
-            </h3>
-          </motion.div>
-
-          <AnimatePresence>
-            <motion.div
-              variants={containerVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
-            >
-              {(showAll ? otherProjects : otherProjects.slice(0, 3)).map(
-                (project) => (
-                  <motion.div
-                    key={project.id}
-                    variants={itemVariants}
-                    whileHover={{ y: -10, scale: 1.02 }}
-                    className="glass-card rounded-2xl p-6 transition-all duration-300 group"
-                  >
-                    <div className="flex items-center justify-between mb-4">
-                      <FolderOpen className="w-10 h-10 text-[#6366f1]" />
-                      <div className="flex items-center gap-3">
-                        {project.github && (
-                          <a
-                            href={project.github}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-[#64748b] hover:text-[#e2e8f0] transition-colors"
-                          >
-                            <Computer className="w-5 h-5" />
-                          </a>
-                        )}
-                        {project.live && (
-                          <a
-                            href={project.live}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-[#64748b] hover:text-[#e2e8f0] transition-colors"
-                          >
-                            <ExternalLink className="w-5 h-5" />
-                          </a>
-                        )}
-                      </div>
-                    </div>
-                    <h4 className="text-xl font-semibold text-[#e2e8f0] mb-3 group-hover:text-[#6366f1] transition-colors">
-                      {project.title}
-                    </h4>
-                    <p className="text-[#64748b] text-sm mb-4 line-clamp-3">
-                      {project.description}
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      {project.techStack.slice(0, 3).map((tech, index) => (
-                        <span key={index} className="text-[#64748b] text-xs">
-                          {tech}
-                          {index < Math.min(project.techStack.length, 3) - 1 &&
-                            " •"}
-                        </span>
-                      ))}
-                    </div>
-                  </motion.div>
-                ),
-              )}
-            </motion.div>
-          </AnimatePresence>
-
-          {otherProjects.length > 3 && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              className="text-center mt-10"
-            >
-              <button
-                onClick={() => setShowAll(!showAll)}
-                className="border-[#6366f1]/30 text-[#e2e8f0] hover:bg-[#6366f1]/10 rounded-xl px-8"
-              >
-                {showAll ? "Show Less" : "View All Projects"}
-              </button>
-            </motion.div>
-          )}
         </div>
       ) : (
         <motion.div
